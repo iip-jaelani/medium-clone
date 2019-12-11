@@ -1,4 +1,5 @@
 .menu-item {
+  text-decoration: none;
   text-transform: uppercase;
   font-size: 12px;
   color: gray;
@@ -8,16 +9,19 @@
   border: none;
 }
 .menu-item:hover {
+  text-decoration: none;
   color: black;
 }
 
 .menu-item-wrapper.active {
+  text-decoration: none;
   font-weight: bold;
 }
 .menu-item.active {
-  color: royalblue;
+  text-decoration: none;
 }
 
 .scroll-menu-arrow {
+  text-decoration: none;
   cursor: pointer;
 }

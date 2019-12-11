@@ -171,7 +171,7 @@ const articleRight = [
 ];
 const list = [
   { name: "HOME" },
-  { name: "ONEZERO" },
+  { name: <a href="/category">ONEZERO</a> },
   { name: "ELEMENTAL" },
   { name: "GEN" },
   { name: "ZORA" },

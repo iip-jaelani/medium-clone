@@ -31,7 +31,7 @@ export default class Categori extends Component {
                     fontSize: 20,
                     textDecoration: "none"
                   }}
-                  href=""
+                  href="/home"
                 >
                   M
                 </a>
