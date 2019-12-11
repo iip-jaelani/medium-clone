@@ -89,7 +89,7 @@ class FormInput extends Component {
           }}
         >
           <Link style={{ textDecoration: "none", color: "white" }} to="/login">
-            reg
+            Register
           </Link>
         </Button>
       </div>
