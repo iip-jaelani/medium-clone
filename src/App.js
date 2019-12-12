@@ -43,13 +43,11 @@ export default class App extends Component {
           <Route path="/follow">
             <Follow />
           </Route>
-<<<<<<< HEAD
           <Route path="/related">
             <Related />
-=======
+          </Route>
           <Route path="/comment">
             <Comment />
->>>>>>> 8.Comment
           </Route>
           <Route path="/button">
             <Button
