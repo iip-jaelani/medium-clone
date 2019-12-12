@@ -6,7 +6,7 @@ import Categori from "./Categori";
 import Article from "./Article-detail";
 import Follow from "./Follow";
 import Button from "./button";
-import Comment from "./comment";
+import Related from "./Related-article";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
@@ -41,8 +41,8 @@ export default class App extends Component {
           <Route path="/follow">
             <Follow />
           </Route>
-          <Route path="/comment">
-            <Comment />
+          <Route path="/related">
+            <Related />
           </Route>
           <Route path="/button">
             <Button

@@ -16,7 +16,7 @@ import "./App.css";
 const articleone = [
   {
     title: "Douchebag: The White Racial Slur We’ve All Been Waiting For",
-    link: "./home",
+    link: "./article",
     data: {
       image:
         "https://cdn-images-1.medium.com/focal/454/165/50/69/1*9r56DrsLjWjzZAnc9bGHOQ.jpeg",
@@ -363,7 +363,7 @@ class Home extends Component {
               <Grid item xs md>
                 {articleone.map(one => (
                   <div style={{ fontSize: 12 }}>
-                    <a href="#">
+                    <a href={one.link}>
                       <img
                         style={{ maxWidth: "100%", height: "auto" }}
                         src={one.data.image}
