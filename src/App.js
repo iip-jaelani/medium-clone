@@ -5,6 +5,7 @@ import Login from "./Login";
 import Categori from "./Categori";
 import Article from "./Article-detail";
 import Follow from "./Follow";
+import Comment from "./Comment";
 import Button from "./button";
 import Related from "./Related-article";
 import Navbar from "./component/Navbar";
@@ -12,13 +13,14 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 export default class App extends Component {
   state = {
-    title: "Log In"
+    title: "0"
   };
   ubah = () => {
     this.setState({
-      title: "cek"
+      title: "100px"
     });
   };
+
   render() {
     return (
       <div>
@@ -41,8 +43,13 @@ export default class App extends Component {
           <Route path="/follow">
             <Follow />
           </Route>
+<<<<<<< HEAD
           <Route path="/related">
             <Related />
+=======
+          <Route path="/comment">
+            <Comment />
+>>>>>>> 8.Comment
           </Route>
           <Route path="/button">
             <Button
