@@ -12,6 +12,8 @@ import IconButton from "@material-ui/core/IconButton";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import ScrollMenu from "react-horizontal-scrolling-menu";
+import Navbar from "./component/Navbar";
+
 import "./App.css";
 const articleone = [
   {
@@ -294,44 +296,7 @@ class Home extends Component {
         <Container>
           {/* nabvar */}
           <div>
-            {/* <AppBar position="static"> */}
-            <Toolbar style={{ backgroundColor: "white" }}>
-              <Typography
-                variant="h6"
-                style={{
-                  color: "black",
-                  fontWeight: "bold",
-                  fontFamily: "mono",
-                  fontSize: "25px"
-                }}
-              >
-                Medium
-              </Typography>
-              <Button
-                color="inherit"
-                style={{
-                  color: "gray",
-                  marginLeft: "auto"
-                }}
-              >
-                <IconButton aria-label="search" color="inherit">
-                  <SearchIcon />
-                </IconButton>
-                <IconButton
-                  aria-label="show 11 new notifications"
-                  color="inherit"
-                >
-                  <NotificationsIcon />
-                </IconButton>
-              </Button>
-              <Button variant="outlined" size="small">
-                Upgrade
-              </Button>
-              <IconButton aria-label="search" color="inherit">
-                <AccountCircleIcon />
-              </IconButton>
-            </Toolbar>
-            {/* </AppBar> */}
+            <Navbar />
             <Container>
               <ScrollMenu
                 ref={el => (this.menu = el)}
