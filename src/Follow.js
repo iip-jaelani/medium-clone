@@ -138,6 +138,46 @@ class Follow extends Component {
                 follow
               </Button>
             </div>
+            <div
+              style={{
+                maxWidth: "100%",
+                display: "flex",
+                marginBottom: 20
+              }}
+            >
+              <Avatar
+                style={{ width: 100, height: 100 }}
+                alt="Remy Sharp"
+                src="https://miro.medium.com/fit/c/87/87/1*e0pwWB5JECmbmBOAtikNlQ.jpeg"
+              />
+              <div
+                style={{
+                  marginLeft: 25,
+                  marginTop: 10,
+                  width: "50%",
+                  marginRight: 150
+                }}
+              >
+                <p style={{ color: "gray", lineHeight: 0 }}>Written by</p>
+                <h3 style={{ fontWeight: "bold" }}>Ryan Holiday</h3>
+                <p style={{ color: "gray" }}>
+                  Bestselling author of ‘Conspiracy,’ ‘Ego is the Enemy’ & ‘The
+                  Obstacle Is The Way’ http://amzn.to/24qKRWR
+                </p>
+              </div>
+              <Button
+                size="small"
+                variant="outlined"
+                style={{
+                  height: "100%",
+                  color: "green",
+                  border: "1 solid green",
+                  margin: "auto"
+                }}
+              >
+                follow
+              </Button>
+            </div>
           </Grid>
         </Grid>
         <Grid container spacing={0} style={{ justifyContent: "center" }}>
