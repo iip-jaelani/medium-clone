@@ -16,6 +16,9 @@ import AppBar from "@material-ui/core/AppBar";
 import Box from "@material-ui/core/Box";
 import Card from "@material-ui/core/Card";
 import Avatar from "@material-ui/core/Avatar";
+import Related from "./Related-article";
+import Follow from "./Follow";
+
 class Article extends Component {
   render() {
     return (
@@ -243,6 +246,8 @@ class Article extends Component {
             </p>
           </div>
         </Container>
+        <Follow />
+        <Related />
       </div>
     );
   }

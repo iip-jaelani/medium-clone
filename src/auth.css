@@ -22,7 +22,6 @@ p {
   height: 80vh;
   background-size: contain;
 
-  background-image: url(https://cdn-images-1.medium.com/max/900/1*gnUBeL-INIVDk0_GyL8x1g.png);
   background-repeat: no-repeat;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
