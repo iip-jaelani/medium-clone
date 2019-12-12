@@ -4,10 +4,19 @@ import Regist from "./Register";
 import Login from "./Login";
 import Categori from "./Categori";
 import Article from "./Article-detail";
-
+import Follow from "./Follow";
+import Button from "./button";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 export default class App extends Component {
+  state = {
+    title: "Log In"
+  };
+  ubah = () => {
+    this.setState({
+      title: "cek"
+    });
+  };
   render() {
     return (
       <div>
@@ -26,6 +35,17 @@ export default class App extends Component {
           </Route>
           <Route path="/article">
             <Article />
+          </Route>
+          <Route path="/follow">
+            <Follow />
+          </Route>
+          <Route path="/button">
+            <Button
+              judul={this.state.title}
+              data={this.ubah}
+              color="red"
+              notif={() => alert("cek")}
+            />
           </Route>
         </Switch>
       </div>
