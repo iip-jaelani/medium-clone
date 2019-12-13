@@ -17,26 +17,6 @@ import Popover from "@material-ui/core/Popover";
 import Avatar from "@material-ui/core/Avatar";
 import "./Navbar.css";
 
-// class Navbar extends Component {
-//   render() {
-//     return (
-//       <>
-//         <Toolbar className="App-ToolBar">
-//           <h1 className="App-Typography ">Medium</h1>
-
-//           <SearchIcon className="coba" />
-//           <NotificationsIcon />
-//           <Button variant="outlined" size="small">
-//             Upgrade
-//           </Button>
-//           <AccountCircleIcon />
-//         </Toolbar>
-//       </>
-//     );
-//   }
-// }
-// export default Navbar;
-
 const menuSatu = [
   {
     name: "Nem story"
@@ -83,7 +63,22 @@ export default function SimplePopover() {
   return (
     <div>
       <Toolbar className="App-ToolBar">
-        <h1 className="App-Typography ">Medium</h1>
+        <Typography>
+          <a
+            style={{
+              backgroundColor: "black",
+              padding: 5,
+              color: "white",
+              fontFamily: "mono",
+              fontSize: 20,
+              textDecoration: "none",
+              marginLeft: "-20px"
+            }}
+            href="/home"
+          >
+            M
+          </a>
+        </Typography>
         <div
           style={{
             display: "flex",
@@ -105,7 +100,7 @@ export default function SimplePopover() {
             onClick={handleClick}
           >
             <Avatar
-              className="App-Avatar"
+              style={{ border: "1px solid gray" }}
               alt="Remy Sharp"
               src="https://cdn-images-1.medium.com/fit/c/55/55/0*0mfE3YsYI3LBr_vG"
             />

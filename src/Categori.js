@@ -10,59 +10,15 @@ import NotificationsIcon from "@material-ui/icons/Notifications";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
+import NavbarArticle from "./component/For-article";
 
 export default class Categori extends Component {
   render() {
     return (
       <div>
-        <AppBar
-          style={{ backgroundColor: "white", height: "100%" }}
-          position="static"
-        >
-          <Container maxWidth="md">
-            <Toolbar>
-              <Typography>
-                <a
-                  style={{
-                    backgroundColor: "black",
-                    padding: 5,
-                    color: "white",
-                    fontFamily: "mono",
-                    fontSize: 20,
-                    textDecoration: "none"
-                  }}
-                  href="/home"
-                >
-                  M
-                </a>
-              </Typography>
-              <Button
-                color="inherit"
-                style={{
-                  color: "gray",
-                  marginLeft: "auto"
-                }}
-              >
-                <IconButton aria-label="search" color="inherit">
-                  <SearchIcon />
-                </IconButton>
-                <IconButton
-                  aria-label="show 11 new notifications"
-                  color="inherit"
-                >
-                  <NotificationsIcon />
-                </IconButton>
-              </Button>
-              <Button variant="outlined" size="small">
-                Upgrade
-              </Button>
-              <IconButton aria-label="search" color="inherit">
-                <AccountCircleIcon />
-              </IconButton>
-            </Toolbar>
-          </Container>
-        </AppBar>
-
+        <Container maxWidth="lg">
+          <NavbarArticle />
+        </Container>
         {/* ---------------------------------------------------------------------------------------------conten pertama */}
         <Container maxWidth="md">
           <div

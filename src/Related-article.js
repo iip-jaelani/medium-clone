@@ -29,7 +29,7 @@ class Related extends Component {
                 </Card>
                 <p
                   style={{
-                    fontSize: 30,
+                    fontSize: 20,
                     fontFamily: "mono",
                     fontWeight: "100 bold"
                   }}
@@ -66,7 +66,7 @@ class Related extends Component {
                 </Card>
                 <p
                   style={{
-                    fontSize: 30,
+                    fontSize: 20,
                     fontFamily: "mono",
                     fontWeight: "100 bold"
                   }}
@@ -103,7 +103,7 @@ class Related extends Component {
                 </Card>
                 <p
                   style={{
-                    fontSize: 30,
+                    fontSize: 20,
                     fontFamily: "mono",
                     fontWeight: "100 bold"
                   }}

@@ -18,96 +18,15 @@ import Card from "@material-ui/core/Card";
 import Avatar from "@material-ui/core/Avatar";
 import Related from "./Related-article";
 import Follow from "./Follow";
+import NavbarArticle from "./component/For-article";
 
 class Article extends Component {
   render() {
     return (
       <div>
-        <AppBar
-          style={{ backgroundColor: "white", height: "100%" }}
-          position="static"
-        >
-          <Container fixed style={{ height: 40 }}>
-            <Toolbar>
-              <Typography>
-                <a
-                  style={{
-                    backgroundColor: "black",
-                    padding: 5,
-                    color: "white",
-                    fontFamily: "mono",
-                    fontSize: 20,
-                    textDecoration: "none",
-                    marginLeft: "-20px"
-                  }}
-                  href="/home"
-                >
-                  M
-                </a>
-              </Typography>
-              <Button
-                color="inherit"
-                style={{
-                  color: "gray",
-                  marginLeft: "auto"
-                }}
-              >
-                <IconButton aria-label="search" color="inherit">
-                  <SearchIcon />
-                </IconButton>
-                <IconButton
-                  aria-label="show 11 new notifications"
-                  color="inherit"
-                >
-                  <NotificationsIcon />
-                </IconButton>
-              </Button>
-              <Button variant="outlined" size="small">
-                Upgrade
-              </Button>
-              <IconButton aria-label="search" color="inherit">
-                <AccountCircleIcon />
-              </IconButton>
-            </Toolbar>
-          </Container>
-          <hr
-            style={{ borderStyle: "solid", borderColor: "gray", width: "100%" }}
-          />
-
-          <Container fixed>
-            <div
-              style={{ display: "flex", flexDirection: "row", fontSize: 13 }}
-            >
-              <img
-                style={{ width: 180, marginBottom: 10 }}
-                src="https://miro.medium.com/max/432/1*IPEsgX_bZKP_7OubdnI7-Q.png"
-              />
-              <p>
-                <a
-                  href=""
-                  style={{
-                    color: "gray",
-                    textDecoration: "none",
-                    marginLeft: 10
-                  }}
-                >
-                  MISSION ORIGINAL
-                </a>{" "}
-                |S
-                <a
-                  href=""
-                  style={{
-                    color: "gray",
-                    textDecoration: "none",
-                    marginLeft: 10
-                  }}
-                >
-                  SUBSCRIBE
-                </a>
-              </p>
-            </div>
-          </Container>
-        </AppBar>
+        <Container maxWidth="lg">
+          <NavbarArticle />
+        </Container>
         <Container maxWidth="md">
           <Card style={{ boxShadow: "0 0 0 0" }}>
             <img

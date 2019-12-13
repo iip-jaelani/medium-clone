@@ -34,3 +34,6 @@
   text-decoration: none;
   color: rgb(154, 153, 153);
 }
+.App-Avatar {
+  border: 1px solid gray;
+}
