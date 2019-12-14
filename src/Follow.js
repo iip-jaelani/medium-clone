@@ -183,20 +183,23 @@ class Follow extends Component {
         <Grid container spacing={0} style={{ justifyContent: "center" }}>
           <Grid item xs={12} sm={6} lg={6} style={{ textAlign: "left" }}>
             <hr />
-            <Button
-              size="large"
-              variant="outlined"
-              style={{
-                width: "100%",
-                height: 50,
-                color: "green",
-                border: "1px solid green",
-                margin: "auto",
-                textTransform: "none"
-              }}
-            >
-              See responses (328)
-            </Button>
+
+            <Link to="/comment">
+              <Button
+                size="large"
+                variant="outlined"
+                style={{
+                  width: "100%",
+                  height: 50,
+                  color: "green",
+                  border: "1px solid green",
+                  margin: "auto",
+                  textTransform: "none"
+                }}
+              >
+                See responses (328)
+              </Button>
+            </Link>
           </Grid>
         </Grid>
       </>

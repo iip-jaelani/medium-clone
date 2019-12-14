@@ -15,32 +15,10 @@ import PropTypes from "prop-types";
 import ScrollMenu from "react-horizontal-scrolling-menu";
 import Popover from "@material-ui/core/Popover";
 import Avatar from "@material-ui/core/Avatar";
-import "./Navbar.css";
-
-// class Navbar extends Component {
-//   render() {
-//     return (
-//       <>
-//         <Toolbar className="App-ToolBar">
-//           <h1 className="App-Typography ">Medium</h1>
-
-//           <SearchIcon className="coba" />
-//           <NotificationsIcon />
-//           <Button variant="outlined" size="small">
-//             Upgrade
-//           </Button>
-//           <AccountCircleIcon />
-//         </Toolbar>
-//       </>
-//     );
-//   }
-// }
-// export default Navbar;
 
 const menuSatu = [
   {
-    name: "Nem story",
-    link: "/story"
+    name: "Nem story"
   },
   {
     name: "Stories"
@@ -84,7 +62,25 @@ export default function SimplePopover() {
   return (
     <div>
       <Toolbar className="App-ToolBar">
-        <h1 className="App-Typography ">Medium</h1>
+        <Typography>
+          <a
+            style={{
+              backgroundColor: "black",
+              padding: 5,
+              color: "white",
+              fontFamily: "mono",
+              fontSize: 20,
+              textDecoration: "none",
+              marginLeft: "-20px"
+            }}
+            href="/home"
+          >
+            M
+          </a>
+        </Typography>
+        <p style={{ marginLeft: 20, marginTop: "auto", marginBottom: "auto" }}>
+          Draf
+        </p>
         <div
           style={{
             display: "flex",
@@ -106,7 +102,7 @@ export default function SimplePopover() {
             onClick={handleClick}
           >
             <Avatar
-              className="App-Avatar"
+              style={{ border: "1px solid gray" }}
               alt="Remy Sharp"
               src="https://cdn-images-1.medium.com/fit/c/55/55/0*0mfE3YsYI3LBr_vG"
             />
@@ -144,7 +140,7 @@ export default function SimplePopover() {
             <hr />
             {menuSatu.map(satu => (
               <div className="App-subMenu">
-                <a className="menu" href={satu.link}>
+                <a className="menu" href="">
                   {satu.name}
                 </a>
               </div>

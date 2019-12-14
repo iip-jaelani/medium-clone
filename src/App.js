@@ -7,9 +7,9 @@ import Article from "./Article-detail";
 import Follow from "./Follow";
 import Comment from "./Comment";
 import Button from "./button";
+import Story from "./11.New-story";
 import Related from "./Related-article";
-import Navbar from "./component/Navbar";
-import navRtricle from "./component/For-article";
+import Navarticle from "./component/For-article";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 export default class App extends Component {
@@ -28,7 +28,6 @@ export default class App extends Component {
         <Switch>
           <Route path="/home">
             <Home />
-            <Navbar />
           </Route>
           <Route path="/regist">
             <Regist />
@@ -41,7 +40,6 @@ export default class App extends Component {
           </Route>
           <Route path="/article">
             <Article />
-            <navRtricle />
           </Route>
           <Route path="/follow">
             <Follow />
@@ -52,16 +50,21 @@ export default class App extends Component {
           <Route path="/comment">
             <Comment />
           </Route>
-          {/* <Route path="/button">
+          <Route path="/story">
+            <Story />
+          </Route>
+        </Switch>
+      </div>
+    );
+  }
+}
+{
+  /* <Route path="/button">
             <Button
               judul={this.state.title}
               data={this.ubah}
               color="red"
               notif={() => alert("cek")}
             />
-          </Route> */}
-        </Switch>
-      </div>
-    );
-  }
+          </Route> */
 }
