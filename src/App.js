@@ -15,7 +15,7 @@ import Story from "./Story"
 import Status from "./Status"
 import Bookmark from "./Bookmark"
 import Profile from "./Profile"
-
+import Articleperson from "./Article-by-person"
 
 
 
@@ -86,6 +86,9 @@ export default class App extends Component {
            </Route>
            <Route path="/profile">
              <Profile/>
+           </Route>
+           <Route path="/article-by-person">
+             <Articleperson/>
            </Route>
         </Switch>
       </div>

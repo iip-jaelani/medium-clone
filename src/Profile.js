@@ -14,7 +14,7 @@ class Profile extends Component{
             <Container>
                 <Nav/>
             </Container>
-             <Container maxWidth="md" style={{ marginTop: 100 }}>
+              <Container maxWidth="md" style={{ marginTop: 100 }}>
         <div style={{display: "flex"}}>
             <div style={{textAlign: "left"}}>
                 <h1>Iip Jaelani</h1>
