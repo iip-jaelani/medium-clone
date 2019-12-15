@@ -10,6 +10,7 @@ import Button from "./button";
 import Related from "./Related-article";
 import Navbar from "./component/Navbar";
 import navRtricle from "./component/For-article";
+import Newstory from "./New-story"
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 export default class App extends Component {
@@ -60,8 +61,13 @@ export default class App extends Component {
               notif={() => alert("cek")}
             />
           </Route> */}
+          <Route path="/cek">
+
+          <Newstory/>
+          </Route>
         </Switch>
       </div>
+        
     );
   }
 }

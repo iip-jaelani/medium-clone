@@ -5,7 +5,7 @@ class Button extends Component {
     return (
       <div style={{ color: this.props.color }} onClick={this.props.data}>
         {this.props.judul}
-        <h5>APaaan aja</h5>
+        <h5>s,djhsak aja</h5>
       </div>
     );
   }
