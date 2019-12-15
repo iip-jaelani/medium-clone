@@ -13,6 +13,8 @@ import navRtricle from "./component/For-article";
 import Newstory from "./New-story"
 import Story from "./Story"
 import Status from "./Status"
+import Bookmark from "./Bookmark"
+
 
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
@@ -76,6 +78,9 @@ export default class App extends Component {
            </Route>
            <Route path="/status">
              <Status/>
+           </Route>
+           <Route path="/bookmark">
+             <Bookmark/>
            </Route>
         </Switch>
       </div>
