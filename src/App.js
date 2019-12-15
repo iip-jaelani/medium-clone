@@ -14,6 +14,8 @@ import Newstory from "./New-story"
 import Story from "./Story"
 import Status from "./Status"
 import Bookmark from "./Bookmark"
+import Profile from "./Profile"
+
 
 
 
@@ -81,6 +83,9 @@ export default class App extends Component {
            </Route>
            <Route path="/bookmark">
              <Bookmark/>
+           </Route>
+           <Route path="/profile">
+             <Profile/>
            </Route>
         </Switch>
       </div>
