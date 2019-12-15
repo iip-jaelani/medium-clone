@@ -11,6 +11,10 @@ import Related from "./Related-article";
 import Navbar from "./component/Navbar";
 import navRtricle from "./component/For-article";
 import Newstory from "./New-story"
+import Story from "./Story"
+
+
+
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 export default class App extends Component {
@@ -65,6 +69,11 @@ export default class App extends Component {
 
           <Newstory/>
           </Route>
+          <Route path="/Story">
+
+
+           <Story/>
+           </Route>
         </Switch>
       </div>
         
