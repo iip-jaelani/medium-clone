@@ -12,7 +12,7 @@ import Navbar from "./component/Navbar";
 import navRtricle from "./component/For-article";
 import Newstory from "./New-story"
 import Story from "./Story"
-
+import Status from "./Status"
 
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
@@ -73,6 +73,9 @@ export default class App extends Component {
 
 
            <Story/>
+           </Route>
+           <Route path="/status">
+             <Status/>
            </Route>
         </Switch>
       </div>
