@@ -29,7 +29,7 @@ class Comment extends Component {
                 style={{
                   color: "black",
                   fontWeight: "bold",
-                  fontFamily: "mono",
+                  fontFamily: "none",
                   fontSize: "25px"
                 }}
               >
@@ -223,7 +223,7 @@ class Comment extends Component {
               <Card style={{ marginTop: -50 }}>
                 <p
                   style={{
-                    fontFamily: "mono",
+                    fontFamily: "none",
                     fontSize: 20,
                     color: " gray",
                     textAlign: "left",
@@ -280,7 +280,7 @@ class Comment extends Component {
               <Card style={{ marginTop: -50 }}>
                 <p
                   style={{
-                    fontFamily: "mono",
+                    fontFamily: "none",
                     fontSize: 20,
                     color: " gray",
                     textAlign: "left",
@@ -337,7 +337,7 @@ class Comment extends Component {
               <Card style={{ marginTop: -50 }}>
                 <p
                   style={{
-                    fontFamily: "mono",
+                    fontFamily: "none",
                     fontSize: 20,
                     color: " gray",
                     textAlign: "left",
@@ -394,7 +394,7 @@ class Comment extends Component {
               <Card style={{ marginTop: -50 }}>
                 <p
                   style={{
-                    fontFamily: "mono",
+                    fontFamily: "none",
                     fontSize: 20,
                     color: " gray",
                     textAlign: "left",
@@ -451,7 +451,7 @@ class Comment extends Component {
               <Card style={{ marginTop: -50 }}>
                 <p
                   style={{
-                    fontFamily: "mono",
+                    fontFamily: "none",
                     fontSize: 20,
                     color: " gray",
                     textAlign: "left",

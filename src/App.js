@@ -10,12 +10,14 @@ import Button from "./button";
 import Related from "./Related-article";
 import Navbar from "./component/Navbar";
 import navRtricle from "./component/For-article";
-import Newstory from "./New-story"
-import Story from "./Story"
-import Status from "./Status"
-import Bookmark from "./Bookmark"
-import Profile from "./Profile"
-import Articleperson from "./Article-by-person"
+import Newstory from "./New-story";
+import Story from "./Story";
+import Status from "./Status";
+import Bookmark from "./Bookmark";
+import Profile from "./Profile";
+import Articleperson from "./Article-by-person";
+import Categoryy from "./component/Category";
+
 
 
 
@@ -69,13 +71,11 @@ export default class App extends Component {
               notif={() => alert("cek")}
             />
           </Route> */}
-          <Route path="/cek">
+          <Route path="/newstories">
 
           <Newstory/>
           </Route>
           <Route path="/Story">
-
-
            <Story/>
            </Route>
            <Route path="/status">
@@ -89,6 +89,9 @@ export default class App extends Component {
            </Route>
            <Route path="/article-by-person">
              <Articleperson/>
+           </Route>
+           <Route path="/categoryy">
+             <Categoryy/>
            </Route>
         </Switch>
       </div>

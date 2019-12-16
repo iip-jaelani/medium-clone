@@ -105,34 +105,7 @@ function TabPanel(props) {
         </TabPanel>
        
           </Container>
+          
       </div>
     );
   }
-  
-// class Articleperson extends Component {
-//     render(){
-//         return(
-//             <>
-//           <Container maxWidth="md" style={{ marginTop: 100 }}>
-//         <div style={{display: "flex"}}>
-//             <div style={{textAlign: "left"}}>
-//                 <h1>Iip Jaelani</h1>
-//                 <p>1 Following</p>
-            
-//             </div>
-//             <div style={{marginRight: "auto", marginLeft: 20}}>
-//                     <Button variant="outlined">Edit profile</Button>
-//             </div>
-//             <Avatar style={{width: 150, height: 150}} alt="Remy Sharp" src="https://miro.medium.com/fit/c/128/128/0*0mfE3YsYI3LBr_vG" />
-//         </div>
-//         <div>
-//             <p>Profile</p>
-//             <p>Claps</p>
-//         </div>
-//         </Container>
-//             </>
-//         )
-//     }
-// }
-
-// export default Articleperson;

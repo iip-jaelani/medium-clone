@@ -15,7 +15,9 @@ import PropTypes from "prop-types";
 import ScrollMenu from "react-horizontal-scrolling-menu";
 import Popover from "@material-ui/core/Popover";
 import Avatar from "@material-ui/core/Avatar";
+
 import "./Navbar.css";
+
 
 // class Navbar extends Component {
 //   render() {
@@ -39,29 +41,37 @@ import "./Navbar.css";
 
 const menuSatu = [
   {
+    link: "/newstories",
     name: "Nem story"
   },
   {
+    link: "/story",
     name: "Stories"
   },
   {
-    name: "series"
+    link: "/status",
+    name: "Stats"
   }
 ];
 const menuDua = [
   {
-    name: "Bookmar"
+    link: "/bookmark",
+    name: "Bookmarks"
   },
   {
-    name: "Provile"
+    link: "/profile",
+    name: "Profile"
   },
   {
+    link: "/bookmark",
     name: "Setting"
   },
   {
+    link: "/bookmark",
     name: "Help"
   },
   {
+    link: "/bookmark",
     name: "Sign out"
   }
 ];
@@ -143,16 +153,15 @@ export default function SimplePopover() {
             <hr />
             {menuSatu.map(satu => (
               <div className="App-subMenu">
-                <a className="menu" href="">
+                <a className="menu" href={satu.link}>
                   {satu.name}
                 </a>
               </div>
             ))}
-
             <hr />
             {menuDua.map(dua => (
               <div className="App-subMenu">
-                <a className="menu" href="">
+                <a className="menu" href={dua.link}>
                   {dua.name}
                 </a>
               </div>

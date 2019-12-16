@@ -183,7 +183,9 @@ class Follow extends Component {
         <Grid container spacing={0} style={{ justifyContent: "center" }}>
           <Grid item xs={12} sm={6} lg={6} style={{ textAlign: "left" }}>
             <hr />
+            <Link to="/comment">
             <Button
+            
               size="large"
               variant="outlined"
               style={{
@@ -197,6 +199,7 @@ class Follow extends Component {
             >
               See responses (328)
             </Button>
+            </Link>
           </Grid>
         </Grid>
       </>
